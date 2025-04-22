@@ -2,11 +2,11 @@
 
 int main()
 {
-    char a[5];
+    char name[20];
 
-    scanf("%s", &a);
+    scanf("%s", name);
 
-    printf("%s", a);
+    printf("%s", name);
 
     return 0;
 }
