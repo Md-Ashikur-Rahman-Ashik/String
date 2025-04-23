@@ -3,22 +3,19 @@
 
 int main()
 {
-    // int i = 0;
-    int lengthArray = 1000001;
-    int nread;
-    char stringArray[lengthArray];
+    int i;
 
-    // fgetc(stringArray, 1000001, stdin);
-    // getline(&stringArray, 1000001, stdin);
-    nread = getline(&stringArray, &lengthArray, stdin);
+    char stringArray[1000001];
+    fgets(stringArray, 1000001, stdin);
 
-    // for ( i = 0; stringArray[i] != "'\'"; i++)
-    // {
-    //     /* code */
-    //     printf("%s", stringArray);
-    // }
+    for ( i = 0; stringArray[i] != '\\'; i++)
+    {
+        /* code */
+        printf("%c", stringArray[i]);
+    }
 
-    printf("%s %d", stringArray, nread);
+    // printf("\\");
+    
 
     return 0;
 }
